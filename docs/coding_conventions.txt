@@ -1,0 +1,44 @@
+Coding is mainly done in C and ASM when needed.
+
+For developing purposes the user could choose the IDE he/she wants, the files will be compiled with batch scripts for the main platforms (Linux, Windows, Mac)
+
+ 
+
+In order to make the code more clear we will use this conventions.
+
+- Types should be lowercase
+
+#define mytype char
+- Constants uppercase
+
+#define PIN2   2
+- Macros are written also in uppercase
+
+#define MAX(a, b) (((a) > (b)) ? (a) : (b))
+- Variables:
+
+local ones would start with lowercase
+
+int my_local_variable;
+global ones would start with uppercase
+
+int My_global_variable;
+- Functions CamelCase starting with uppercase letter
+
+void StartEngine(int value);
+Openning curly bracket used for functions and blocks should be located at the end of the starting block line
+
+  void Function(void) {
+     code;
+}
+Code should be untabified with four spaces for each tab.
+
+Modules should incorporate a comment field with the following information:
+
+- Date and author(s)
+
+- Main purpose of the module
+
+- TODO list and bugs found
+
+- Any notes of interest
